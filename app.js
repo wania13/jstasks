@@ -713,28 +713,161 @@ var first="wania" , last="kanwal",age=22;//task1
 
 
 
+// chapter 14-16
+// 1.
+var students = [];
+// 2.
+
+// 3.
+var strings = ['hello' , 'world'];
+// 4.
+var nums = [1,2,3];
+// 5.
+var bools = [true,false];
+// 6.
+var mixed = [23, 'my variable' , false];
+// 7.
+var qualifications = ['SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M. Phil.', 'PhD'];
+document.write('Qualifications');
+qualifications.forEach(qualification => {
+    document.write(qualification);
+});
+// 8.
+var marks; 
+students = ['wardha','kashif','ahmed'];
+marks = [320,230,480];
+var i=0;
+students.forEach(student => {
+    document.write("Score of " + student + " is " + marks[i] + ". Percentage :" + (marks[i]/500)*100 + "%");
+    i++;
+});
+// 9.
+var colors = ['red','yellow','blue','black','brown'];
+document.write(colors);
+ip = prompt("what do you want to add at the beginning");
+colors.unshift(ip);
+ip = prompt("what do you want to add at the end");
+color.pop(ip);
+ip = prompt("what do you want to add at the beginning");
+colors.unshift(ip);
+ip = prompt("what do you want to add at the beginning");
+colors.unshift(ip);
+colors.shift();
+colors.pop();
+document.write(colors);
+var index = prompt("enter the index where you want to insert ");
+ip = prompt("enter a color");
+colors.splice(index, ip);
+index = prompt("enter the index where you want to delete ");
+colors.pop(index);
+// 10.
+document.write("marks of student " + marks);
+document.write("sorted marks of student " + marks.sort());
+// 11.
+var cities = ['karachi','lahore' , 'islamabad', 'quetta', 'dadu' ];
+document.write(cities.slice(1,3));
+// 12.
+var arr = ['This' ,  'is' ,  'my' ,  'cat'];
+arr.join(' ');
+// 13.
+arr.push('keyboard','mouse','printer','monitor');
+document.write(arr.shift());
+document.write(arr.shift());
+document.write(arr.shift());
+document.write(arr.shift());
+// 14.
+arr.push('keyboard','mouse','printer','monitor');
+document.write(arr.pop());
+document.write(arr.pop());
+document.write(arr.pop());
+document.write(arr.pop());
+// 15.
+arr['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+document.write("<select><option>"+arr[0]+"</option><option>"+arr[1]+"</option><option>"+arr[2]+"</option><option>"+arr[0]+"</option><option>"+arr[3]+"</option><option>"+arr[4]+"</option><option>"+arr[5]+"</option></select>")
 
 
-
-
-//task1---------------------------------
-var namelist=[]
-
-//task2+3---------------------------------
-var cars = ["Saab", "Volvo", "BMW"];
-
-//task4----------------------------------
-var carsno = [1,2,3,4,5,6];
-
-//task5----------------------------------
-var boolarray=[1,0,true,false]
-
-//task6----------------------------------
-var info = ["Saab", 1, true];
-
-
-//task7---------------------------------
-var qualification=["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"]
-for (var i=0 ; i<qualification.length;i++){
-    document.write(i+1 +")"+qualification[i]+"<br>")
+// chapter 17-20
+// 1.
+var myarr = [[]];
+// 2.
+myarr = [ 
+    [0,1,2,3],
+    [1,0,1,2],
+    [2,1,0,1]
+ ];
+// 3.
+for(var i =1; i<=10 ; i++){
+    document.write(i);
 }
+// 4.
+num = prompt("entter a number : ");
+num2 = prompt("enter length of table : ")
+for(var i =1; i<=num2 ; i++){
+    document.write(num + " x " + i + " = " + num*i );
+}
+// 5.
+var fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry'];
+for( i = 0; i<4; i++){
+    document.write(fruits[i]);
+}
+for( i = 0; i<4; i++){
+    document.write("Element at index " + i + " is " + fruits[i]);
+}
+// 6.
+for( i = 1; i<=15; i++){
+    document.write(i);
+}
+for( i = 10; i>0; i--){
+    document.write(i);
+}
+for( i = 0; i<=20; i++){
+    if(i%2 == 0){
+        document.write(i);
+    }
+}
+for( i = 0; i<=20; i++){
+    if(i%2 != 0){
+        document.write(i);
+    }
+}
+for( i = 1; i<=20; i++){
+    if(i%2 == 0){
+        document.write(i);
+    }
+}
+// 7.
+arr = ["cake", "apple pie", "cookie", "chips", "patties"];
+ip = prompt("enter bakery item");
+for(i = 0 ; i<5 ; i++){
+    if(arr[i] == ip){
+        alert("item present in bakery");
+        break;
+    }
+}
+if(i == 5){
+    alert("sorry item not present");
+}
+// 8.
+var A = [24, 53, 78, 91, 12];
+num = A[0];
+for( i = 0 ; i<5 ; i++){
+    if(A[i] > num){
+        num = A[i];
+    }
+}  
+document.write("largest number is : " + num);  
+// 9.
+ A = [24, 53, 78, 91, 12];
+num = A[0];
+for( i = 0 ; i<5 ; i++){
+    if(A[i] < num){
+        num = A[i];
+    }
+}  
+document.write("smallest number is : " + num); 
+// 10.
+for(i = 5; i <=100; i = i + 5){
+    document.write(i);
+}
+
+
